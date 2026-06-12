@@ -1,4 +1,8 @@
-const BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+// В продакшене REACT_APP_API_URL = https://ваш-сервер.up.railway.app
+// Локально proxy в package.json перенаправляет /api → localhost:5001
+const BASE = process.env.REACT_APP_API_URL
+  ? `${process.env.REACT_APP_API_URL}/api`
+  : '/api';
 
 const headers = (json = true) => {
   const h = {};
