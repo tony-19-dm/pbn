@@ -564,9 +564,9 @@ function applyPreprocessing(img, pp) {
 
 // ── Пресеты сложности ─────────────────────────────────────────────────────────
 const DIFFICULTY_PRESETS={
-  easy:  {label:'Простой', icon:'🟢',nColors:8, minFacetSize:150,nHaar:2,desc:'~8 цветов, крупные области'},
-  medium:{label:'Средний', icon:'🟡',nColors:16,minFacetSize:50, nHaar:2,desc:'~16 цветов, средние области'},
-  hard:  {label:'Сложный', icon:'🔴',nColors:28,minFacetSize:15, nHaar:2,desc:'~28 цветов, мелкие детали'},
+  easy:  {label:'Простой', icon:'🟢',nColors:8, minFacetSize:150,nHaar:2,desc:'8 цветов, крупные области'},
+  medium:{label:'Средний', icon:'🟡',nColors:16,minFacetSize:50, nHaar:2,desc:'16 цветов, средние области'},
+  hard:  {label:'Сложный', icon:'🔴',nColors:32,minFacetSize:15, nHaar:2,desc:'32 цветв, мелкие детали'},
 };
 
 // ── UI helpers ────────────────────────────────────────────────────────────────
