@@ -12,7 +12,7 @@ export default function Layout() {
     <div className="layout">
       <header className="header">
         <div className="header-inner">
-          <Link to="/" className="logo">🎨 PaintByNumbers</Link>
+          <Link to="/" className="logo">🎨 Раскраски По Номерам</Link>
           <nav className="nav">
             <Link to="/">Лента</Link>
             <Link to="/generate">Создать</Link>

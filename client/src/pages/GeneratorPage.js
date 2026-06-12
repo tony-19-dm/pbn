@@ -205,12 +205,12 @@ export default function GeneratorPage() {
         <StepTitle n={1} title="Загрузите фото" />
         <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
           <button className="btn-primary" onClick={() => fileRef.current.click()}>
-            📁 Выбрать файл
+            Выбрать файл
           </button>
           <input ref={fileRef} type="file" accept="image/*" onChange={handleFile} style={{ display: 'none' }} />
           {imgSrc && (
             <span style={{ fontSize: 12, color: '#888', display: 'flex', alignItems: 'center', gap: 8 }}>
-              ✅ Загружено
+              Загружено
               <button className="btn-ghost" style={{ fontSize: 11 }} onClick={() => fileRef.current.click()}>
                 Заменить
               </button>
@@ -307,7 +307,7 @@ export default function GeneratorPage() {
           disabled={processing || step === 'preprocess'}
           style={{ padding: '10px 24px', fontSize: 15, marginBottom: 16, opacity: step === 'preprocess' ? 0.4 : 1 }}
         >
-          {processing ? '⏳ Генерация...' : '✨ Сгенерировать раскраску'}
+          {processing ? 'Генерация...' : 'Сгенерировать раскраску'}
         </button>
       )}
 
@@ -363,7 +363,7 @@ export default function GeneratorPage() {
           <div style={{ borderTop: '1px solid #eee', paddingTop: 16 }}>
             {published ? (
               <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                <span style={{ color: '#16a34a', fontSize: 14 }}>✅ Опубликовано в ленту!</span>
+                <span style={{ color: '#16a34a', fontSize: 14 }}>Опубликовано в ленту!</span>
                 <button className="btn-ghost" style={{ fontSize: 12 }} onClick={() => nav('/')}>
                   Перейти в ленту →
                 </button>
@@ -381,7 +381,7 @@ export default function GeneratorPage() {
                     maxLength={100}
                   />
                   <button type="submit" className="btn-primary" disabled={publishing}>
-                    {publishing ? 'Публикация...' : '🌐 Опубликовать'}
+                    {publishing ? 'Публикация...' : 'Опубликовать'}
                   </button>
                 </form>
                 {publishError && <p style={{ color: '#ef4444', fontSize: 13, marginTop: 6 }}>{publishError}</p>}
