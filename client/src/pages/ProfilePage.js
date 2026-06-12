@@ -61,7 +61,7 @@ export default function ProfilePage() {
               + Создать
             </button>
             <button className="btn-ghost" onClick={() => nav('/favorites')}>
-              ❤️ Избранное
+              Избранное
             </button>
           </div>
         )}
