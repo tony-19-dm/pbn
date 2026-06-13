@@ -340,7 +340,7 @@ function buildAllBorderPaths(facets, facetMap, w, h) {
 function reduceHaar(pts, times, w, h) {
   let path=[...pts];
   for(let t=0;t<times;t++){
-    if(path.length<=10) break;
+    if(path.length<=5) break;
     const out=[path[0]];
     for(let i=1;i<path.length-2;i+=2){
       const a=path[i],b=path[i+1];
