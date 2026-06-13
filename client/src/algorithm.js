@@ -1,7 +1,6 @@
 
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// Полный порт алгоритма из main.js (picgen.ru)
 // Этапы: K-Means → narrowPixelStrip → buildFacets → removeFacets →
 //        buildBorderPaths → buildBorderSegments (Haar) → matchSegments → createSVG
 // ═══════════════════════════════════════════════════════════════════════════════
