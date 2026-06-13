@@ -11,7 +11,7 @@ class Random {
   next() { const x = Math.sin(this.seed++) * 10000; return x - Math.floor(x); }
 }
 
-// ── Цветовые конвертации (lib/colorconversion из main.js) ─────────────────────
+// ── Цветовые конвертации ─────────────────────
 function rgbToHsl(r, g, b) {
   r /= 255; g /= 255; b /= 255;
   const max = Math.max(r, g, b), min = Math.min(r, g, b);
@@ -62,7 +62,7 @@ function lab2rgb(lab) {
   return [Math.max(0,Math.min(1,r))*255, Math.max(0,Math.min(1,g))*255, Math.max(0,Math.min(1,b))*255];
 }
 
-// ── K-Means clustering (lib/clustering из main.js) ────────────────────────────
+// ── K-Means clustering ────────────────────────────
 class Vector {
   constructor(values, weight=1) { this.values=values; this.weight=weight; this.tag=null; }
   distanceTo(p) { let s=0; for(let i=0;i<this.values.length;i++) s+=(p.values[i]-this.values[i])**2; return Math.sqrt(s); }
@@ -84,10 +84,10 @@ class KMeans {
   }
 }
 
-// ── OrientationEnum (facetmanagement из main.js) ──────────────────────────────
+// ── OrientationEnum  ──────────────────────────────
 const OE = { Left:0, Top:1, Right:2, Bottom:3 };
 
-// ── K-Means + colormap (colorreductionmanagement из main.js) ──────────────────
+// ── K-Means + colormap ──────────────────
 function applyKMeans(imgData, nColors, colorSpace, randomSeed, colorRestrictions) {
   const w=imgData.width, h=imgData.height;
   const bitsOff=2;
